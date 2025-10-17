@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Official</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #001f4d, #ff0099);
+      background-attachment: fixed;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      color: #ff80d0;
+      border-bottom: 2px solid #ff80d0;
+    }
+
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .member {
+      width: 180px;
+      height: 320px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 0, 150, 0.4);
+      transition: 0.3s;
+    }
+
+    .member:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 0, 200, 0.6);
+    }
+
+    .member img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+    }
+
+    /* efeito suave ao rolar */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header>WORLD OFFICIAL</header>
+
+  <nav>
+    <a href="#members">Membros</a>
+    <a href="#store">Loja</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#events">Eventos</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <section id="members">
+    <h2>Integrantes</h2>
+    <div class="members">
+      <!-- Substitua os arquivos abaixo pelas fotos reais dos membros -->
+      <div class="member"><img src="membro1.png" alt="Membro 1"></div>
+      <div class="member"><img src="membro2.png" alt="Membro 2"></div>
+      <div class="member"><img src="membro3.png" alt="Membro 3"></div>
+      <div class="member"><img src="membro4.png" alt="Membro 4"></div>
+      <div class="member"><img src="membro5.png" alt="Membro 5"></div>
+      <div class="member"><img src="membro6.png" alt="Membro 6"></div>
+      <div class="member"><img src="membro7.png" alt="Membro 7"></div>
+      <div class="member"><img src="membro8.png" alt="Membro 8"></div>
+      <div class="member"><img src="membro9.png" alt="Membro 9"></div>
+      <div class="member"><img src="membro10.png" alt="Membro 10"></div>
+      <div class="member"><img src="membro11.png" alt="Membro 11"></div>
+      <div class="member"><img src="membro12.png" alt="Membro 12"></div>
+      <div class="member"><img src="membro13.png" alt="Membro 13"></div>
+      <div class="member"><img src="membro14.png" alt="Membro 14"></div>
+    </div>
+  </section>
+
+  <section id="store">
+    <h2>Loja</h2>
+    <p>Em breve — produtos oficiais do World estarão disponíveis aqui!</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galeria</h2>
+    <p>Confira as melhores fotos e momentos do grupo.</p>
+  </section>
+
+  <section id="events">
+    <h2>Eventos</h2>
+    <p>Fique por dentro das próximas apresentações e datas oficiais.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>E-mail: worldmusiiacofficial@gmail.com</p>
+    <p>Instagram: <a href="https://instagram.com/worldmusiciaofficial" style="color:#ff80d0;">@worldmusiciaofficial</a></p>
+  </section>
+
+  <footer>
+    © 2025 World Entertainment. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
