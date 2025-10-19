@@ -1,101 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Music</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World Official</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #222;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #001f4d, #ff0099);
+      background-attachment: fixed;
+      color: white;
     }
 
     header {
-      background: linear-gradient(90deg, #0072ff, #00c6ff);
-      color: white;
-      padding: 40px 0;
-      font-size: 2rem;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 2em;
       font-weight: bold;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
-    section {
-      padding: 40px 20px;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
     }
 
-    h2 {
-      color: #0072ff;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      color: #ff80d0;
+      border-bottom: 2px solid #ff80d0;
     }
 
     .members {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
+      padding: 40px;
       justify-items: center;
     }
 
     .member {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 15px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 180px;
+      height: 320px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255, 0, 150, 0.4);
+      transition: 0.3s;
     }
 
     .member:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 0, 200, 0.6);
     }
 
     .member img {
       width: 100%;
-      height: auto;
-      border-radius: 10px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
     }
 
     footer {
-      background: #0072ff;
-      color: white;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-      margin-top: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+    }
+
+    /* efeito suave ao rolar */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
-  <header>
-    🌍 World Music
-  </header>
+
+  <header>WORLD OFFICIAL</header>
+
+  <nav>
+    <a href="#members">Membros</a>
+    <a href="#store">Loja</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#events">Eventos</a>
+    <a href="#contact">Contato</a>
+  </nav>
 
   <section id="members">
     <h2>Integrantes</h2>
     <div class="members">
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro1.png" alt="Membro 1"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro2.png" alt="Membro 2"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro3.png" alt="Membro 3"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro4.png" alt="Membro 4"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro5.png" alt="Membro 5"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro6.png" alt="Membro 6"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro7.png" alt="Membro 7"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro8.png" alt="Membro 8"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro9.png" alt="Membro 9"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro10.png" alt="Membro 10"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro11.png" alt="Membro 11"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro12.png" alt="Membro 12"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro13.png" alt="Membro 13"></div>
-      <div class="member"><img src="https://worldmusicia.github.io/WorldMusic/images/Membro14.png" alt="Membro 14"></div>
+      <!-- Substitua os arquivos abaixo pelas fotos reais dos membros -->
+      <div class="member"><img src="membro1.png" alt="Membro 1"></div>
+      <div class="member"><img src="membro2.png" alt="Membro 2"></div>
+      <div class="member"><img src="membro3.png" alt="Membro 3"></div>
+      <div class="member"><img src="membro4.png" alt="Membro 4"></div>
+      <div class="member"><img src="membro5.png" alt="Membro 5"></div>
+      <div class="member"><img src="membro6.png" alt="Membro 6"></div>
+      <div class="member"><img src="membro7.png" alt="Membro 7"></div>
+      <div class="member"><img src="membro8.png" alt="Membro 8"></div>
+      <div class="member"><img src="membro9.png" alt="Membro 9"></div>
+      <div class="member"><img src="membro10.png" alt="Membro 10"></div>
+      <div class="member"><img src="membro11.png" alt="Membro 11"></div>
+      <div class="member"><img src="membro12.png" alt="Membro 12"></div>
+      <div class="member"><img src="membro13.png" alt="Membro 13"></div>
+      <div class="member"><img src="membro14.png" alt="Membro 14"></div>
     </div>
   </section>
 
+  <section id="store">
+    <h2>Loja</h2>
+    <p>Em breve — produtos oficiais do World estarão disponíveis aqui!</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galeria</h2>
+    <p>Confira as melhores fotos e momentos do grupo.</p>
+  </section>
+
+  <section id="events">
+    <h2>Eventos</h2>
+    <p>Fique por dentro das próximas apresentações e datas oficiais.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>E-mail: worldmusiiacofficial@gmail.com</p>
+    <p>Instagram: <a href="https://instagram.com/worldmusiciaofficial" style="color:#ff80d0;">@worldmusiciaofficial</a></p>
+  </section>
+
   <footer>
-    © 2025 World Music. Todos os direitos reservados.
+    © 2025 World Entertainment. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
 
